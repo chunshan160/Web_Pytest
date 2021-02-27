@@ -1,0 +1,16 @@
+*.iws
+*.iml
+*.ipr
+.settings
+.project
+.classpath
+.externalToolBuilders
+*.class
+*svn/
+.idea/
+*.jar
+*.pyc
+*.json
+TestCases/TestResult/Allure/results/
+*.txt
+TestResult/Allure/report/

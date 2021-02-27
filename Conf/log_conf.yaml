@@ -1,0 +1,6 @@
+#收集
+logger_collect_level : DEBUG
+#打印
+logger_print_level : DEBUG
+#输出
+logger_output_level : DEBUG
