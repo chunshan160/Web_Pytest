@@ -4,8 +4,8 @@
 #@Author :春衫
 #@File :member_info_page.py
 
-from base.base_page import BasePage
-from page_locators import member_info_locators as locators
+from Common.base_page import BasePage
+from PageLocators import member_info_locators as locators
 
 class MemberInfoPage(BasePage):
 

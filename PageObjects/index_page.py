@@ -4,8 +4,8 @@
 #@Author :春衫
 #@File :index_page.py
 
-from base.base_page import BasePage
-from page_locators import index_locators as locators
+from Common.base_page import BasePage
+from PageLocators import index_locators as locators
 
 class IndexPage(BasePage):
 

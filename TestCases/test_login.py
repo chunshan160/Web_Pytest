@@ -8,12 +8,12 @@
 import pytest
 import allure
 
-from page_objects.index_page import IndexPage
-from page_objects.login_page import LoginPage
-from base.base_test import BaseTest
-from test_data.login_data import login_success_data
-from test_data.login_data import login_failure_datas
-from Conf.constants import Constants
+from PageObjects.index_page import IndexPage
+from PageObjects.login_page import LoginPage
+from Common.base_test import BaseTest
+from TestData.login_data import login_success_data
+from TestData.login_data import login_failure_datas
+from Common.constants import Constants
 
 
 @allure.feature('登录功能')
@@ -51,7 +51,7 @@ class TestLogin(BaseTest):
         # 1、账户昵称是否为自动化测试帐号1
         actual = IndexPage().get_my_account_text()
         with allure.step("断言登录账户"):
-            assert actual == "我的帐户[自动化测试帐号1]", "正常登录账户信息错误"
+            assert actual == "我的帐户[春衫走马]", "正常登录账户信息错误"
         # 2、跳转到首页
         actualUrl = self.get_current_url()
         with allure.step("断言跳转页面"):

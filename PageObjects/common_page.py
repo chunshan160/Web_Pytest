@@ -4,7 +4,7 @@
 #@Author :春衫
 #@File :common_page.py
 
-from page_locators import common_locators as locators
+from PageLocators import common_locators as locators
 
 class CommonPage:
 

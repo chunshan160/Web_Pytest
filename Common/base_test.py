@@ -6,8 +6,8 @@
 
 from selenium import webdriver
 
-from base.log import UserLog
-from base.project_path import chrome_driver_path
+from Common.logger import UserLog
+from Common.dir_config import chrome_driver_path
 
 """
 BaseTest是所有测试用例类的父类
@@ -20,11 +20,14 @@ class BaseTest:
 
     """根据浏览器名字打开对应的浏览器"""
     def open_browser(self,browser_name):
+        option = webdriver.ChromeOptions()
+        # 防止打印一些无用的日志
+        option.add_experimental_option("excludeSwitches", ['enable-automation', 'enable-logging'])
         if browser_name == 'Firefox':
             BaseTest.driver = webdriver.Firefox(executable_path=chrome_driver_path)
             log.info("=====================打开了Firefox浏览器===================")
         elif browser_name == 'Chrome':
-            BaseTest.driver = webdriver.Chrome(executable_path=chrome_driver_path)
+            BaseTest.driver = webdriver.Chrome(executable_path=chrome_driver_path,options=option)
             log.info("=====================打开了Chrome浏览器===================")
         elif browser_name == 'IE':
             BaseTest.driver = webdriver.Ie(executable_path=chrome_driver_path)

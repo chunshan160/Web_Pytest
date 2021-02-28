@@ -12,7 +12,7 @@ def read_yaml(file_path):
     return  data
 
 if __name__ == '__main__':
-    from base.project_path import yamlPath
+    from Common.dir_config import yamlPath
 
     config = read_yaml(yamlPath)
     print(config)

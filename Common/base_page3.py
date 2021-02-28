@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 # @Time :2021/1/30 15:55
 # @Author :春衫
-# @File :base_page.py
+# @File :base_page3.py
 import time
 
 import win32con
@@ -11,8 +11,8 @@ from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from base.base_test import BaseTest
-from base.log import UserLog
+from Common.base_test import BaseTest
+from Common.logger import UserLog
 
 """
 所有页面对象类的公共操作

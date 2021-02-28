@@ -4,8 +4,8 @@
 # @Author :春衫
 # @File :login_page.py
 
-from page_locators import login_locators as locators
-from base.base_page import BasePage
+from PageLocators import login_locators as locators
+from Common.base_page import BasePage
 
 
 class LoginPage(BasePage):

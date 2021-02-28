@@ -7,12 +7,12 @@
 import allure
 import pytest
 
-from base.base_test import BaseTest
-from page_objects.index_page import IndexPage
-from page_objects.loan_detail_page import LoanDetailPage
-from page_objects.login_page import LoginPage
-from page_objects.member_info_page import MemberInfoPage
-from test_data.login_data import login_success_data
+from Common.base_test import BaseTest
+from PageObjects.index_page import IndexPage
+from PageObjects.loan_detail_page import LoanDetailPage
+from PageObjects.login_page import LoginPage
+from PageObjects.member_info_page import MemberInfoPage
+from TestData.login_data import login_success_data
 
 
 @allure.feature('投标功能')

@@ -2,12 +2,12 @@
 # -*- coding:utf-8 -*-
 # @Time :2020/4/19 19:03
 # @Author :春衫
-# @File :log.py
+# @File :Logs.py
 
 import logging
 
-from base.project_path import log_conf_path, log_path
-from base.read_yaml import read_yaml
+from Common.dir_config import log_conf_path, log_path
+from Common.read_yaml import read_yaml
 
 
 class UserLog:
@@ -38,7 +38,7 @@ class UserLog:
             sh.setFormatter(formatter)
 
             # 日志文件名格式
-            log_file = "web_auto" + ".log"
+            log_file = "web_auto" + ".logs"
             log_name = log_path + "/" + log_file
 
             # 创建日志文件 写入级别
